@@ -48,7 +48,7 @@ const App = () => {
         </button>
       </div>
       <ul className="list-disc pl-5">
-        {items ?items.map((item) => (
+        {items.length > 0 ?items.map((item) => (
           <li key={item.id} className="flex justify-between mb-2">
             <span>{item.name}</span>
             <div>
